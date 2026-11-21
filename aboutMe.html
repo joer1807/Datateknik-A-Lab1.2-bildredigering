@@ -2,25 +2,20 @@
 <html lang="sv">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bildredigering</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" sizes="32x32" href="images/faviconDino.png">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/faviconDino.png">
 </head>
-
 
 <body>
 
     <header class="Hero-section">
-
-        <img src="images/Logotyp.svg" alt="logotyp" class="hero-logo" >
+        <img src="images/Logotyp.svg" alt="Logotyp" class="hero-logo">
         <h1 class="hero-title">Bildredigering</h1>
 
-        <nav>
+        <nav aria-label="Huvudmeny">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutMe.html">About</a></li>
@@ -29,51 +24,50 @@
         </nav>
 
         <div class="header-text">
-            <p>Välkommen till min hemsida där jag arbetar med bildredigering. Här har jag gjort en favicon, logotyp och en enkel navigering. En herobild med lägre opacitet ses, vilken också är anpassad till skärmstorleken.</p>
+            <p>Välkommen till min hemsida där jag arbetar med bildredigering. Här har jag gjort en favicon, logotyp och
+                en enkel navigering. En herobild med lägre opacitet ses, vilken också är anpassad till skärmstorleken.
+            </p>
         </div>
-
-
     </header>
 
-<main>
+    <main>
+        <section id="AboutMe" aria-label="Om mig">
+            <p>Jag heter Hanna. Photopea har frilagt mitt porträtt och formaterat det.</p>
+            <p>Här är en film om hur denna webbplats först analyserats och sedan optimerats prestandamässigt. Filmen är
+                inspelad i OBS och sedan klippt i Clipchamp.</p>
 
-<section id="AboutMe" aria-label="Om mig">
-    <p>Jag heter Hanna. Photopea har frilagt mitt porträtt och formaterat det.</p>
- 
-    <div class="media-container">
-    <picture>
-    <source srcset="images/aboutme.webp" type="image/webp">
-    <img src="images/aboutme.png" alt="Frilagt porträtt på Hanna i 40-årsåldern" width="450" height="600" decoding="async">
-</picture> 
+            <div class="media-container">
+                <picture>
+                    <source srcset="images/aboutme.webp" type="image/webp">
+                    <img src="images/aboutme.png" alt="Frilagt porträtt på Hanna i 40-årsåldern" width="450"
+                        height="600" decoding="async">
+                </picture> 
+
+                <p>Här är en film om hur denna webbplats först analyserat sedan optimerats prestandamässigt. Filmen är
+                    inspelad i OBS och sedan klippt i clipchamp.</p>
+                <video controls>
+                    <source src="videos/optimera-webbplatsen .mp4" type="video/mp4">
+                    Din webbläsare stöder inte videouppspelning.
+                </video>
 
 
-
-<br>
-
-<p>Här är en film om hur denna webbplats först analyserat sedan optimerats prestandamässigt. Filmen är inspelad i OBS och sedan klippt i clipchamp.</p>
-<video controls>
-    <source src="videos/optimera-webbplatsen .mp4" type="video/mp4">
-    Din webbläsare stöder inte videouppspelning.
-</video>
-
-        </div>
-</section>
-
-</main>
+                <iframe src="https://youtu.be/eyHtIAPcvok" title="Optimera din webbplats" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
 
     <footer>
-
-<nav>
+        <nav aria-label="Sidfotsmeny">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutMe.html">About</a></li>
-                <li><a href="pictures.html">pictures</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
             </ul>
         </nav>
-
-
     </footer>
-
 
 </body>
 

@@ -40,6 +40,7 @@ img {
     opacity: 0.45;
     z-index: -1;
 }
+
 .hero-logo {
     width: 90px;       
     height: auto;      /* Behåller logons proportioner */
@@ -147,15 +148,6 @@ main p {
     min-width: 0;
 }
 
-.picture-container p {
-    margin: 0;
-    font-family: sans-serif;
-    font-weight: normal;    /* Ändrat från 600 så att texten inte blir fet */
-    font-size: 16px;        /* Hindrar att texten blir för stor på datorn */
-    line-height: 1.5;       /* Ger luft mellan raderna för lättare läsning */
-    color: #1c241e;
-}
-
 /* bilderna  */
 .picture-container img {
     width: 100%;
@@ -170,7 +162,9 @@ main p {
 .picture-container p {
     margin: 0;
     font-family: sans-serif;
-    font-weight: 600;
+    font-weight: normal;    /* Ändrat från 600 så att texten inte blir fet */
+    font-size: 16px;        /* Hindrar att texten blir för stor på datorn */
+    line-height: 1.5;       /* Ger luft mellan raderna för lättare läsning */
     color: #1c241e;
 }
 
@@ -194,13 +188,22 @@ main p {
     height: auto;
 }
 
+/* Responsiv stil för din YouTube-iframe så den matchar videon */
+.media-container iframe {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+}
+
 /* -----Media query för att göra layouten responsiv på större skärmar (Datorer/Surfplattor)--- */
 @media (min-width: 768px) {
     
     .Hero-section {
         max-width: 100%;     /* Hela vägen ut till skärmkanterna */
         margin: 0;           /* Tar bort centreringen av själva boxen */
-        min-height: 500px;       /* Fast höjd på datorn */
+        min-height: 500px;   /* Fast höjd på datorn */
         padding: 40px 20px;  /* Minskar luften så att texten inte trycks ut utanför bilden */
         box-sizing: border-box;
     }
